@@ -111,11 +111,11 @@
 
         sym_ru {
             bindings = <
-&trans  &kp EXCL  &kp AT_SIGN  &kp HASH   &kp DOLLAR  &kp PRCNT                    &kp CARET  &kp QUESTION    &kp ASTRK  &kp LESS_THAN  &kp GREATER_THAN  &trans
-&trans  &trans    &trans       &trans     &trans      &trans                       &trans     &kp LBKT        &kp EQUAL  &kp RBKT       &kp PIPE          &trans
-&trans  &trans    &trans       &kp COMMA  &kp DOT     &trans                       &kp DQT    &kp LEFT_BRACE  &kp MINUS  &kp RBRC       &kp FSLH          &trans
-&trans  &trans    &trans       &trans     &trans      &trans     &trans    &trans  &kp SQT    &kp LPAR        &kp UNDER  &kp RPAR       &kp BSLH          &trans
-                  &trans       &trans     &trans      &mo 5      &trans    &trans  &trans     &trans          &trans     &trans
+&trans  &kp RU_EXCLAMATION  &kp AT_SIGN  &kp POUND     &kp DOLLAR  &kp RU_PERCENT                    &kp CARET             &kp RU_QUESTION          &kp RU_ASTERISK  &kp LESS_THAN             &kp GREATER_THAN  &trans
+&trans  &trans              &trans       &trans        &trans      &trans                            &trans                &kp LBKT                 &kp RU_EQUAL     &kp RBKT                  &kp PIPE          &trans
+&trans  &trans              &trans       &kp RU_COMMA  &kp RU_DOT  &trans                            &kp RU_DOUBLE_QUOTES  &kp LEFT_BRACE           &kp RU_MINUS     &kp RBRC                  &kp RU_SLASH      &trans
+&trans  &trans              &trans       &trans        &trans      &trans          &trans    &trans  &kp SQT               &kp RU_LEFT_PARENTHESIS  &kp UNDER        &kp RU_RIGHT_PARENTHESIS  &kp RU_BACKSLASH  &trans
+                            &trans       &trans        &trans      &mo 5           &trans    &trans  &trans                &trans                   &trans           &trans
             >;
 
             display-name = "Symbols RU";
