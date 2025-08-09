@@ -111,10 +111,10 @@
 
         sym_ru {
             bindings = <
-&trans  &kp RU_EXCLAMATION  &kp AT_SIGN  &kp POUND     &kp DOLLAR  &kp RU_PERCENT                    &kp CARET             &kp RU_QUESTION          &kp RU_ASTERISK  &kp LESS_THAN             &kp GREATER_THAN  &trans
-&trans  &trans              &trans       &trans        &trans      &trans                            &trans                &kp LBKT                 &kp RU_EQUAL     &kp RBKT                  &kp PIPE          &trans
-&trans  &trans              &trans       &kp RU_COMMA  &kp RU_DOT  &trans                            &kp RU_DOUBLE_QUOTES  &kp LEFT_BRACE           &kp RU_MINUS     &kp RBRC                  &kp RU_SLASH      &trans
-&trans  &trans              &trans       &trans        &trans      &trans          &trans    &trans  &kp SQT               &kp RU_LEFT_PARENTHESIS  &kp UNDER        &kp RU_RIGHT_PARENTHESIS  &kp RU_BACKSLASH  &trans
+&trans  &kp RU_EXCLAMATION  &en AT_SIGN  &en POUND     &en DOLLAR  &kp RU_PERCENT                    &en CARET             &kp RU_QUESTION          &kp RU_ASTERISK  &en LESS_THAN             &en GREATER_THAN  &trans
+&trans  &trans              &trans       &trans        &trans      &trans                            &trans                &en LBKT                 &kp RU_EQUAL     &en RBKT                  &en PIPE          &trans
+&trans  &trans              &trans       &kp RU_COMMA  &kp RU_DOT  &trans                            &kp RU_DOUBLE_QUOTES  &en LEFT_BRACE           &kp RU_MINUS     &en RBRC                  &kp RU_SLASH      &trans
+&trans  &trans              &trans       &trans        &trans      &trans          &trans    &trans  &en SQT               &kp RU_LEFT_PARENTHESIS  &kp UNDER        &kp RU_RIGHT_PARENTHESIS  &kp RU_BACKSLASH  &trans
                             &trans       &trans        &trans      &mo 5           &trans    &trans  &trans                &trans                   &trans           &trans
             >;
 
