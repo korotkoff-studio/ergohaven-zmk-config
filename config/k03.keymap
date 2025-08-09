@@ -39,7 +39,7 @@
             #binding-cells = <1>;
             bindings =
                 <&to_en>,
-                <&macro_wait_time 100>,
+                <&macro_wait_time 200>,
                 <&macro_param_1to1 &kp MACRO_PLACEHOLDER &to_ru>,
                 <&macro_wait_time 50>;
 
@@ -110,14 +110,15 @@
         };
 
         sym_ru {
-            display-name = "Symbols RU";
             bindings = <
-&trans         &en HASH          &en LT    &en EQUAL     &en GT       &en GRAVE                    &en CARET  &kp RU_DQT  &en UNDER    &en SQT   &trans      &trans
-&trans         &trans            &trans    &trans        &trans       &trans                       &trans     &trans      &trans       &trans    &trans      &trans
-&kp RU_NUMERO  &kp RU_BACKSLASH  &en LPAR  &en MINUS     &en RPAR     &en PLUS                     &en PRCNT  &en LBRC    &kp RU_SEMI  &en RBRC  &en EXCL    &kp RU_QMARK
-&trans         &kp RU_COMMA      &en STAR  &kp RU_COLON  &kp RU_FSLH  &en DLLR   &trans    &trans  &en AT     &en PIPE    &en TILDE    &en AMPS  &kp RU_DOT  &trans
-                                 &trans    &trans        &trans       &mo 5      &trans    &trans  &trans     &trans      &en LBKT     &en RBKT
+&trans  &kp EXCL  &kp AT_SIGN  &kp HASH   &kp DOLLAR  &kp PRCNT                    &kp CARET  &kp QUESTION    &kp ASTRK  &kp LESS_THAN  &kp GREATER_THAN  &trans
+&trans  &trans    &trans       &trans     &trans      &trans                       &trans     &kp LBKT        &kp EQUAL  &kp RBKT       &kp PIPE          &trans
+&trans  &trans    &trans       &kp COMMA  &kp DOT     &trans                       &kp DQT    &kp LEFT_BRACE  &kp MINUS  &kp RBRC       &kp FSLH          &trans
+&trans  &trans    &trans       &trans     &trans      &trans     &trans    &trans  &kp SQT    &kp LPAR        &kp UNDER  &kp RPAR       &kp BSLH          &trans
+                  &trans       &trans     &trans      &mo 5      &trans    &trans  &trans     &trans          &trans     &trans
             >;
+
+            display-name = "Symbols RU";
         };
 
         adj {
