@@ -14,15 +14,31 @@
         };
     };
 
+    macros {
+        switch_to_en: new_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(LS(NUMBER_1))>;
+            label = "NEW_MACRO";
+        };
+
+        switch_to_ru: switch_to_ru {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(LS(NUMBER_2))>;
+            label = "SWITCH_TO_RU";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
         base {
             bindings = <
-&kp GRAVE  &kp N1  &kp N2    &kp N3    &kp N4     &kp N5                          &kp N6  &kp N7         &kp N8              &kp N9    &kp N0    &kp BSPC
-&kp ESC    &kp Q   &kp W     &kp E     &kp R      &kp T                           &kp Y   &kp U          &kp I               &kp O     &kp P     &kp BSLH
-&kp TAB    &kp A   &kp S     &kp D     &kp F      &kp G                           &kp H   &kp J          &kp K               &kp L     &kp SEMI  &kp SQT
-&kp LSHFT  &kp Z   &kp X     &kp C     &kp V      &kp B   &kp LBKT     &kp RBKT   &kp N   &kp M          &kp RU_CYRILLIC_BE  &kp DOT   &kp FSLH  &tog 0
+&kp GRAVE  &kp N1  &kp N2    &kp N3    &kp N4     &kp N5                          &kp N6  &kp N7         &kp N8              &kp N9    &kp N0         &kp BSPC
+&kp ESC    &kp Q   &kp W     &kp E     &kp R      &kp T                           &kp Y   &kp U          &kp I               &kp O     &kp P          &kp BSLH
+&kp TAB    &kp A   &kp S     &kp D     &kp F      &kp G                           &kp H   &kp J          &kp K               &kp L     &kp SEMI       &kp SQT
+&kp LSHFT  &kp Z   &kp X     &kp C     &kp V      &kp B   &kp LBKT     &kp RBKT   &kp N   &kp M          &kp RU_CYRILLIC_BE  &kp DOT   &switch_to_ru  &switch_to_en
                    &kp LGUI  &kp LALT  &kp LCTRL  &mo 1   &kp SPACE    &kp ENTER  &mo 2   &kp BACKSPACE  &kp RALT            &kp RGUI
             >;
 
